@@ -16,7 +16,7 @@ public class PlayerInteract : MonoBehaviour
 
 	private float interactionDistance = 5f;
 
-	private void Awake()
+	private void Start()
 	{
 		cameraTransform = GetComponentInChildren<Camera>().transform;
 		uiManager = GameObject.Find(Constants.UI_MANAGER_OBJECT_NAME).GetComponent<UIManager>();
