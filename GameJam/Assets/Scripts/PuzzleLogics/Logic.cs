@@ -4,7 +4,7 @@ using UnityEngine;
 
 public abstract class Logic : MonoBehaviour
 {
-    public bool isEnabled = true;
+    public bool panelHasElectricity;
     // Start is called before the first frame update
     public abstract void action(); 
 }

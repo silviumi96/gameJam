@@ -167,12 +167,6 @@ MonoBehaviour:
   triggers:
   - {fileID: 1022358965}
   isComplete: 0
---- !u!4 &360027919 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6214730560789827028, guid: 7b12fdec45429774ea18eaf9920a6e26,
-    type: 3}
-  m_PrefabInstance: {fileID: 6214730560608262875}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &380178857
 GameObject:
   m_ObjectHideFlags: 0
@@ -501,7 +495,7 @@ PrefabInstance:
     - target: {fileID: 3776475699093608682, guid: 1129bb80cfdf5c247950c423f51ebfbf,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1129bb80cfdf5c247950c423f51ebfbf, type: 3}
@@ -533,7 +527,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 614585575}
-  - {fileID: 360027919}
+  - {fileID: 1571120740}
   - {fileID: 1207473466}
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -657,6 +651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f693101b183f4e8418d4a1661893f8e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isEnabled: 1
 --- !u!1 &1039434082
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,6 +733,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1571120740 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9141782240558947074, guid: 7b12fdec45429774ea18eaf9920a6e26,
+    type: 3}
+  m_PrefabInstance: {fileID: 6214730560608262875}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829479962
 GameObject:
   m_ObjectHideFlags: 0
@@ -970,6 +971,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4606810346094132667, guid: 87c44f06f07052848be1917a40a08700,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87c44f06f07052848be1917a40a08700, type: 3}
 --- !u!1001 &5064151444567284326
@@ -1107,6 +1113,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Room_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141782240417846141, guid: 7b12fdec45429774ea18eaf9920a6e26,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9141782240558947074, guid: 7b12fdec45429774ea18eaf9920a6e26,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7b12fdec45429774ea18eaf9920a6e26, type: 3}
