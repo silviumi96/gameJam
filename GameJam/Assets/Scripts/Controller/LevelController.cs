@@ -6,10 +6,10 @@ public class LevelController : MonoBehaviour
 {
 
     public List<GameObject> puzzles;
-    private List<GameObject> completed;
+    private List<int> completed = new List<int>();
     public GameObject obstruction;
     
-    public void addCompletedPuzzle(GameObject puzzle) 
+    public void addCompletedPuzzle(int puzzle) 
     {
         completed.Add(puzzle);
         if (puzzlesFinished()) {
