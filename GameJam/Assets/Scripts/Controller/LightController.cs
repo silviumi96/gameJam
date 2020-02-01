@@ -14,7 +14,7 @@ public class LightController : Logic
         {
             foreach (var light in lights)
             {
-                light.GetComponent<Light>().intensity = 10;
+                light.GetComponent<Light>().intensity = 4;
             }
             isSwitched = true;
         }
