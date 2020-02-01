@@ -10,5 +10,6 @@ public class Obstruction : MonoBehaviour
         // on animationEND call Destroy()
 
         Debug.Log("Obstruction Removed");
+        Destroy(gameObject);
     }
 }

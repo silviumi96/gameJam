@@ -7032,7 +7032,6 @@ GameObject:
   - component: {fileID: 9141782240397167860}
   - component: {fileID: 9141782240397167861}
   - component: {fileID: 9141782240170673798}
-  - component: {fileID: 9141782240170673793}
   m_Layer: 8
   m_Name: Panel (1)
   m_TagString: Untagged
@@ -7126,19 +7125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
---- !u!114 &9141782240170673793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9141782240397167867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f693101b183f4e8418d4a1661893f8e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnabled: 1
 --- !u!1 &9141782240417846141
 GameObject:
   m_ObjectHideFlags: 0
@@ -8396,7 +8382,6 @@ GameObject:
   - component: {fileID: 9141782241131322518}
   - component: {fileID: 9141782241131322519}
   - component: {fileID: 9141782240919641401}
-  - component: {fileID: 9141782240919641400}
   m_Layer: 8
   m_Name: Panel (2)
   m_TagString: Untagged
@@ -8490,19 +8475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
---- !u!114 &9141782240919641400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9141782241131322517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f693101b183f4e8418d4a1661893f8e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnabled: 1
 --- !u!1 &9141782241146941171
 GameObject:
   m_ObjectHideFlags: 0
@@ -8886,7 +8858,6 @@ GameObject:
   - component: {fileID: 9141782241283788316}
   - component: {fileID: 9141782241283788317}
   - component: {fileID: 9141782240304165067}
-  - component: {fileID: 9141782240304165066}
   m_Layer: 8
   m_Name: Panel (3)
   m_TagString: Untagged
@@ -8980,19 +8951,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isTriggered: 0
---- !u!114 &9141782240304165066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9141782241283788291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc383af197de0ed4ab300c541312a131, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isEnabled: 1
 --- !u!1 &9141782241418884494
 GameObject:
   m_ObjectHideFlags: 0
