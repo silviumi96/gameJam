@@ -19,7 +19,7 @@ public class PlayerInteract : MonoBehaviour
 	private void Awake()
 	{
 		cameraTransform = GetComponentInChildren<Camera>().transform;
-		uiManager = GameObject.Find("UIManager").GetComponent<UIManager>();
+		uiManager = GameObject.Find(Constants.UI_MANAGER_OBJECT_NAME).GetComponent<UIManager>();
 		crosshair = uiManager.CrosshairImage;
 
 		crosshair.color = Color.white;
@@ -36,7 +36,7 @@ public class PlayerInteract : MonoBehaviour
 			if (Input.GetMouseButtonDown(0))
 			{
 				Debug.Log("Interacted with " + hit.transform.name);
-                hit.transform.GetComponent<Logic>()?.action();
+				hit.transform.GetComponent<Logic>()?.action();
 				Debug.DrawRay(transform.position, cameraForward, Color.red, 9999999);
 			}
 		}
