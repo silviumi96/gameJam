@@ -36,7 +36,7 @@ public class PlayerInteract : MonoBehaviour
 			{
 				Debug.Log("Interacted with " + hit.transform.name);
                 hit.transform.GetComponent<Logic>()?.action();
-				Debug.DrawRay(transform.position, playerForward, Color.red, 9999999);
+				Debug.DrawRay(transform.position, cameraForward, Color.red, 9999999);
 			}
 		}
 		else
