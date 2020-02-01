@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 6733587587206814658}
   - component: {fileID: 6733587587214932738}
   - component: {fileID: 6733587587208744262}
+  - component: {fileID: 2141218754}
   m_Layer: 0
-  m_Name: RigidBodyFPSController
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -126,13 +127,24 @@ MonoBehaviour:
     MaximumX: 90
     smooth: 1
     smoothTime: 18
-    lockCursor: 1
   advancedSettings:
     groundCheckDistance: 0.1
     stickToGroundHelperDistance: 0.6
     slowDownRate: 20
     airControl: 0
     shellOffset: 0
+--- !u!114 &2141218754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6733587587201693860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1aa7d54324898747924035e58b5b669, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6733587587201693862
 GameObject:
   m_ObjectHideFlags: 0
