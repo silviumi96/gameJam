@@ -5,7 +5,7 @@ using UnityEngine;
 public class Puzzle : MonoBehaviour
 {
     public List<GameObject> triggers;
-    public bool isComplete;
+    public bool isComplete = false;
 
     public void checkCompletion() 
     {

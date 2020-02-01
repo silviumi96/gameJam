@@ -12,12 +12,12 @@ public class LevelController : MonoBehaviour
     public void addCompletedPuzzle(GameObject puzzle) 
     {
         completed.Add(puzzle);
-        if (isPuzzlesFinished()) {
+        if (puzzlesFinished()) {
             killObstruction();
         }
     }
 
-    private bool isPuzzlesFinished() 
+    private bool puzzlesFinished() 
     {
         if (completed.Count == puzzles.Count)
             return true;
