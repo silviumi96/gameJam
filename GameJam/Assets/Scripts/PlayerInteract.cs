@@ -29,7 +29,7 @@ public class PlayerInteract : MonoBehaviour
 			if (Input.GetMouseButtonDown(0))
 			{
 				Debug.Log("Interacted with " + hit.transform.name);
-                hit.transform.GetComponent<LeverLogic>()?.action();
+                hit.transform.GetComponent<Logic>()?.action();
 				Debug.DrawRay(transform.position, playerForward, Color.red, 9999999);
 			}
 		}
