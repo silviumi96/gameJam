@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class PlayerInteract : MonoBehaviour
 {
 	public GameObject RaycastedObject { get; private set; }
-	public Image crosshair;
-	private Vector3 playerForward;
+	public Transform CameraTransform;
+	public Image Crosshair;
+	private Vector3 cameraForward;
 	private LayerMask layerMask;
 	private RaycastHit hit;
 
@@ -15,17 +16,22 @@ public class PlayerInteract : MonoBehaviour
 
 	private void Awake()
 	{
+		if (CameraTransform == null)
+		{
+			CameraTransform = GetComponentInChildren<Camera>().transform;
+		}
+
+		Crosshair.color = Color.white;
 		layerMask = LayerMask.GetMask("Interactable");
-		crosshair.color = Color.white;
 	}
 
 	private void Update()
 	{
-		playerForward = transform.TransformDirection(Vector3.forward);
+		cameraForward = CameraTransform.forward;
 
-		if (Physics.Raycast(transform.position, playerForward, out hit, interactionDistance, layerMask))
+		if (Physics.Raycast(CameraTransform.position, cameraForward, out hit, interactionDistance, layerMask))
 		{
-			crosshair.color = Color.red;
+			Crosshair.color = Color.red;
 			if (Input.GetMouseButtonDown(0))
 			{
 				Debug.Log("Interacted with " + hit.transform.name);
@@ -35,7 +41,7 @@ public class PlayerInteract : MonoBehaviour
 		}
 		else
 		{
-			crosshair.color = Color.white;
+			Crosshair.color = Color.white;
 		}
 	}
 }
