@@ -11,7 +11,7 @@ public class LeverLogic : MonoBehaviour
         transform.GetComponent<Switch>().setTrigger(true);
 
         if (transform.GetComponent<Switch>().isTriggered)
-            tranform.position = transform.position + new Vector3(1, 1, 1);
+            transform.position = transform.position + new Vector3(1, 1, 1);
 
     }
 }
