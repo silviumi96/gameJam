@@ -19,7 +19,7 @@ public class LevelController : MonoBehaviour
 
     private bool puzzlesFinished() 
     {
-        if (completed.Count == puzzles.Count)
+        if (completed.Count >= puzzles.Count)
             return true;
         return false;
     }
@@ -27,5 +27,17 @@ public class LevelController : MonoBehaviour
     private void killObstruction() 
     {
         obstruction.GetComponentInChildren<Obstruction>().DisableObstruction();
+    }
+
+    public int getPuzzleIdByName(string puzzleName)
+    {
+        foreach (GameObject puzzle in puzzles)
+        {
+            if (puzzle.name == puzzleName) {
+                return puzzle.GetInstanceID();
+            }
+        }
+
+        return -1;
     }
 }

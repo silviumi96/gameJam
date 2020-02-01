@@ -17,7 +17,7 @@ public class Puzzle : MonoBehaviour
         }
 
         isComplete = true;
-        transform.parent.GetComponent<LevelController>().addCompletedPuzzle(1); // TODO: check if better method to propagate
+        transform.parent.GetComponent<LevelController>().addCompletedPuzzle(1);
     }
 
 }
