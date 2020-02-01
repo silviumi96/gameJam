@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class Logic : MonoBehaviour
 {
+    public bool isEnabled = true;
     // Start is called before the first frame update
     public abstract void action(); 
 }
