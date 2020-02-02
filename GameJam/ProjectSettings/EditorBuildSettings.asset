@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/EmaPuzzleScenes.unity
+    guid: ae49db8b4075f4a42b857801a4a626eb
   m_configObjects: {}

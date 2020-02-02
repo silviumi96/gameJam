@@ -9,10 +9,10 @@ public class WireLogic : Logic
 
 	private void Start()
 	{
-		correctOrder.Add("RedWire");
-		correctOrder.Add("YellowWire");
-		correctOrder.Add("GreenWire");
-		correctOrder.Add("BlueWire");
+		correctOrder.Add("Wire_A");
+		correctOrder.Add("Wire_B");
+		correctOrder.Add("Wire_C");
+		correctOrder.Add("Wire_D");
 		uIManager = GameObject.Find("GameUI").GetComponent<UIManager>();
 	}
 

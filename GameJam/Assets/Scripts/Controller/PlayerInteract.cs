@@ -38,7 +38,7 @@ public class PlayerInteract : MonoBehaviour
 			{
 				if (hit.transform.gameObject.tag == "Wire")
 				{
-					hit.transform.GetComponent<Logic>()?.action(hit.transform);
+					hit.transform.GetComponent<Logic>().action(hit.transform);
 				}
 
 				Debug.Log("Interacted with " + hit.transform.name);

@@ -11,6 +11,11 @@ public class Obstruction : MonoBehaviour
 
         Debug.Log("Obstruction Removed");
         //Destroy(gameObject);
+        gameObject.SetActive(false);
         GetComponent<Animator>().Play("doorOpen");
+        Debug.Log("anim played");
+        Debug.Log(gameObject.name);
+        Debug.Log(GetComponent<Animator>());
+        //Destri
     }
 }
