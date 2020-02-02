@@ -21,4 +21,9 @@ public abstract class Logic : MonoBehaviour
 	public virtual void action(Transform tran)
 	{
 	}
+
+    public void setPanelHasElectricity(bool hasElectricity)
+    {
+        this.panelHasElectricity = hasElectricity;
+    }
 }

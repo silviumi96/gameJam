@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:GameJam/Assets/Prefabs/Room_1v2.prefab.meta
 guid: 6d65b8e129d880a4eabb01044a38cd67
 PrefabImporter:
+=======
+guid: eb4f775a0fca0714997ed69870becfae
+NativeFormatImporter:
+>>>>>>> Ema_Room4:GameJam/Assets/Art/Sprites/CinciMaterial.mat.meta
   externalObjects: {}
+  mainObjectFileID: 2100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
