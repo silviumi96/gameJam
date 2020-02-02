@@ -18,10 +18,11 @@ public class KeypadLogic : Logic
         {
             if (playerCode == correctCode)
             {
-
+                Switch4.gameObject.layer = 8;
                 Debug.Log("Correct!");
             } else
             {
+                Switch4.gameObject.layer = 0;
                 playerCode = "";
                 totalDigits = 0;
                 Debug.Log("You are the weakeast link!");
