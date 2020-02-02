@@ -36,7 +36,7 @@ public class PlayerInteract : MonoBehaviour
 			if (Input.GetMouseButtonDown(0))
 			{
 				Debug.Log("Interacted with " + hit.transform.name);
-				hit.transform.GetComponent<Logic>()?.action();
+				hit.transform.GetComponent<Logic>()?.doAction();
 				Debug.DrawRay(transform.position, cameraForward, Color.red, 9999999);
 			}
 		}
