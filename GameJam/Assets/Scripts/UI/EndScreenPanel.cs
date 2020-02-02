@@ -19,7 +19,7 @@ public class EndScreenPanel : MonoBehaviour
 		gameOverLabel = GetComponentInChildren<TextMeshProUGUI>();
 	}
 
-	private void SetGameOverLabel(string text = "GameOver")
+	public void SetGameOverLabel(string text = "GameOver")
 	{
 		gameOverLabel.text = text;
 	}

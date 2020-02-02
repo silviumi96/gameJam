@@ -33,11 +33,16 @@ public class PlayerInteract : MonoBehaviour
 		if (Physics.Raycast(cameraTransform.position, cameraForward, out hit, interactionDistance, layerMask))
 		{
 			crosshair.color = Color.red;
+
 			if (Input.GetMouseButtonDown(0))
 			{
+				if (hit.transform.gameObject.tag == "Wire")
+				{
+					hit.transform.GetComponent<Logic>()?.action(hit.transform);
+				}
+
 				Debug.Log("Interacted with " + hit.transform.name);
 				hit.transform.GetComponent<Logic>()?.action();
-				Debug.DrawRay(transform.position, cameraForward, Color.red, 9999999);
 			}
 		}
 		else
