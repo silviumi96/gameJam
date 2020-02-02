@@ -11,24 +11,22 @@ public class LightController : Logic
 	{
 		if (!isSwitched)
 		{
-
-            GetComponent<Animator>().Play("toggledOn");
-            foreach (var light in lights)
+			GetComponent<Animator>().Play("toggledOn");
+			foreach (var light in lights)
 			{
 				light.GetComponent<Light>().intensity = 4f;
-               // GetComponent<Animator>().SetBool("IsOn", true);
-            }
+				// GetComponent<Animator>().SetBool("IsOn", true);
+			}
 			isSwitched = true;
 		}
 		else
 		{
-
-            GetComponent<Animator>().Play("toggledOff");
-            foreach (var light in lights)
+			GetComponent<Animator>().Play("toggledOff");
+			foreach (var light in lights)
 			{
 				light.GetComponent<Light>().intensity = 0.3f;
-                //GetComponent<Animator>().SetBool("IsOn", false);
-            }
+				//GetComponent<Animator>().SetBool("IsOn", false);
+			}
 			isSwitched = false;
 		}
 	}
