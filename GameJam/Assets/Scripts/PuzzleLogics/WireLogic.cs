@@ -10,7 +10,7 @@ public class WireLogic : Logic
 	private void Start()
 	{
 		correctOrder.Add("RedWire");
-		correctOrder.Add("YellowGrid");
+		correctOrder.Add("YellowWire");
 		correctOrder.Add("GreenWire");
 		correctOrder.Add("BlueWire");
 		uIManager = GameObject.Find("GameUI").GetComponent<UIManager>();
@@ -20,9 +20,12 @@ public class WireLogic : Logic
 	{
 		if (correctOrder.Count > 0)
 		{
+            Debug.Log(wire.name);
+            Debug.Log(correctOrder[0]);
 			if (wire.name == correctOrder[0])
 			{
-				correctOrder.Remove(wire.name);
+                correctOrder.RemoveAt(0);
+				//correctOrder.Remove(wire.name);
 				//cut wire animation
 			}
 			else
@@ -31,8 +34,12 @@ public class WireLogic : Logic
 				uIManager.EndScreenPanel.Open();
 			}
 
-			uIManager.EndScreenPanel.SetGameOverLabel("You saved the world!");
-			uIManager.EndScreenPanel.Open();
+            if (correctOrder.Count == 0)
+            {
+
+                uIManager.EndScreenPanel.SetGameOverLabel("You saved the world!");
+                uIManager.EndScreenPanel.Open();
+            }
 		}
 	}
 }
