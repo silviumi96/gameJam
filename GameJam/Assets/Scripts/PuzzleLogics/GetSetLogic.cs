@@ -21,7 +21,7 @@ public class GetSetLogic : Logic
                 Instantiate(lever, player.transform);
                 //lever.transform.position = Camera.main.transform.forward * 100;
                 gaveLever = true;
-                panelHasElectricity = true;
+                //panelHasElectricity = true;
                 transform.gameObject.GetComponent<MeshRenderer>().enabled =false;
                 transform.GetComponent<Switch>().setTrigger(false);
             }
@@ -30,7 +30,7 @@ public class GetSetLogic : Logic
         {
             Debug.Log("Entered HAS hasElectricity");
                 Debug.Log("Remvoed Child");
-                panelHasElectricity = false;
+                //panelHasElectricity = false;
                 gaveLever = false;
                 player.transform.GetChild(player.transform.childCount-1).gameObject.SetActive(false);
                    transform.gameObject.GetComponent<MeshRenderer>().enabled = true;

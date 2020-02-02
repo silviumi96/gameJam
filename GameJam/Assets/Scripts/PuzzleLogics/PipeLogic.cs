@@ -36,8 +36,8 @@ public class PipeLogic : Logic
             water.GetComponent<WaterLogic>().setWaterLevel(1);
             foreach (Transform child in powerPannel3.transform)
             {
-                child.GetComponent<Logic>().setPanelHasElectricity(true);
-                child.gameObject.layer = 8;
+                child.GetComponent<Logic>().setPanelHasElectricity(false);
+                child.gameObject.layer = 0;
             }
             // TODO: handle death
         }
