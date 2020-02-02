@@ -12,9 +12,17 @@ public class LeverLogic : Logic
             transform.GetComponent<Switch>().setTrigger(!transform.GetComponent<Switch>().isTriggered);
 
             if (transform.GetComponent<Switch>().isTriggered)
-                transform.position = transform.position + new Vector3(0, 1, 0);
+            {
+                Debug.Log("ENTEREWD");
+                Debug.Log(GetComponentInChildren<Animator>().name);
+                GetComponentInChildren<Animator>().Play("toggledOn");
+            }
             else
-                transform.position = transform.position - new Vector3(0, 1, 0);
+            {
+                Debug.Log("ENTEREWD off");
+                Debug.Log(GetComponentInChildren<Animator>().name);
+                GetComponentInChildren<Animator>().Play("toggledOff");
+            }
         } else
         {
             gameObject.layer = 0;

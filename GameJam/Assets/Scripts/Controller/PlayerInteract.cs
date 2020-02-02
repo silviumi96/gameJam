@@ -42,7 +42,7 @@ public class PlayerInteract : MonoBehaviour
 				}
 
 				Debug.Log("Interacted with " + hit.transform.name);
-				hit.transform.GetComponent<Logic>()?.action();
+				hit.transform.GetComponent<Logic>().action();
 				Debug.DrawRay(transform.position, cameraForward, Color.red, 9999999);
 			}
 		}

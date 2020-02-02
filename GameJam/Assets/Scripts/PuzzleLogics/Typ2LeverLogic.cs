@@ -20,7 +20,7 @@ public class Typ2LeverLogic : Logic
 						if (child.GetComponent<Switch>().isTriggered)
 						{
 							child.GetComponent<Switch>().setTrigger(!child.GetComponent<Switch>().isTriggered);
-							child.position = child.position - new Vector3(0, 1, 0);
+							child.GetComponentInChildren<Animator>().Play("toggledOff");
 							child.GetComponent<Switch>().setTrigger(false);
 
 							//child.position = child.position + new Vector3(0, 1, 0);
@@ -31,11 +31,12 @@ public class Typ2LeverLogic : Logic
 				}
 				transform.GetComponent<Switch>().setTrigger(!transform.GetComponent<Switch>().isTriggered);
 
-				if (transform.GetComponent<Switch>().isTriggered)
-					transform.position = transform.position + new Vector3(0, 1, 0);
-				else
-					transform.position = transform.position - new Vector3(0, 1, 0);
-			}
+                if (transform.GetComponent<Switch>().isTriggered)
+                    GetComponentInChildren<Animator>().Play("toggledOn");
+
+                else
+                    GetComponentInChildren<Animator>().Play("toggledOff");
+            }
 		}
 		else
 		{
